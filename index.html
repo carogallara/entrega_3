@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - tienda online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-40GGf2a5P4e..." crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+ <header>
+        <nav class="navbar">
+           <img src="./img/Dwight2.png" alt="logo de la tienda online Dwight" class="logo">
+            <div class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#inicio">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a href="#cat" class="nav-link">Categorias</a>
+                            <a href="./pages/productos.html"class="nav-link">Productos</a>
+                            <a href="./pages/nosotros.html"class="nav-link">Nosotros</a>
+                            <a href="./pages/contacto.html"class="nav-link">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bienvenida" id="Inicio" >
+            <h1>Bienvenidos a nuestra tienda online</h1>
+            <p class="p">Donde nuestro objetivo es ofrecer nuestro servicio de calidad para los clientes y brindar una mejor experiencia al realizar su compra</p>
+        </section>
+           <section class="categorias" id="cat">
+              <h2>Categorías</h2>
+            <div class="categoria-menu">
+            <button class="categoria-item" onclick="location.href='pages/categorias.html'">Cocina</button>
+            <button class="categoria-item" onclick="location.href='pages/categorias.html'">Limpieza</button>
+            <button class="categoria-item" onclick="location.href='pages/categorias.html'">Electrónica</button>
+            <button class="categoria-item" onclick="location.href='pages/categorias.html'">Cuidado Facial</button>
+            </div>
+            </section>
+            <section class="destacados">
+        <h2>Productos destacados</h2>
+        <div class="producto-des">
+            <div class="producto">
+                <img src="./img/Batidora_03.jpg" alt="">
+                <p>Batidora Manual</p>
+            </div>
+            <div class="producto">
+                <img src="./img/Filtro_03.jpg" alt="C:\Users\Usuario\Desktop\entrega-2-coder\img\Filtro_03.jpg">
+                <p>Filtro Purificador</p>
+            </div>
+            <div class="producto">
+                <img src="./img/Parlante_03.jpg" alt="C:\Users\Usuario\Desktop\entrega-2-coder\img\Parlante_03.jpg">
+                <p>Parlante Bluetooth</p>
+            </div>
+            <div class="producto">
+                <img src="./img/Masajeador_03.jpg" alt="C:\Users\Usuario\Desktop\entrega-2-coder\img\Masajeador_03.jpg">
+                <p>Masajeador Facial</p>
+            </div>
+        </div>
+    </section>
+        <section class="texto" id="nosotros">
+            <h3 class="Q">¿Quienes Somos?</h3>
+            <div class="descripcion">
+                <p > ·Tu espacio online para encontrar lo que necesitás, ¡sin salir de casa!
+                En nuestro bazar vas a descubrir una amplia variedad de productos para el hogar, decoración, cocina,
+                organizadores, artículos de temporada, regalos y mucho más.
+                Seleccionamos cada producto con dedicación, priorizando la calidad, el diseño y buenos precios.
+                ¿Por qué elegirnos? Atención personalizada, envíos a todo el país, promociones semanales y mucho más
+                📦 Comprá fácil, rápido y seguro desde tu casa.
+                💬 ¡Estamos para ayudarte por WhatsApp o redes sociales!</p>
+        </section>
+        <section class="formulario-contacto" id="contacto">
+            <h3>Escribinos por acá...</h3>
+           <form>
+            <div class="fila">
+                <label>Nombre:</label>
+                <input type="text" placeholder="tu nombre"/>
+                <label>Correo:</label>
+                <input type="email" placeholder="tu correo electrónico"/>
+            </div>
+            <div class="fila">
+                <label>Mensaje:</label>
+                <input type="text" placeholder="Dejanos tu mensaje" />
+                <button type="submit">enviar</button>
+            </div>
+           </form>
+        </section>
+    </main>
+    <footer>&copy; 2025 Mi Tienda online.Todos los derechos reservados </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
