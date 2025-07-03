@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+  .footer {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: transparent;
+    color: black;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .footer__copy {
+    font-weight: bold;
+  }
+  
+  .footer__redes {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .footer__redes a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__redes a:hover {
+    color: #fdfcf9;
+  }
