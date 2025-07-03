@@ -69,12 +69,14 @@
   
   
   main {
-    max-width: 1200px;
+     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
     color: black;
     font-weight: bold;
     text-align: left;
+  }
+
   
  .bienvenida {
       padding: 4rem 2rem;      
@@ -101,9 +103,7 @@
         p {
           font-size: 1.2rem;
           color: black;
-        }
-      }
-    
+        }  
       &__imagen {
         flex: 1 1 40%;
         min-width: 280px;
@@ -341,4 +341,4 @@
         padding: 1rem;
       }
     }
-  }
+       }
