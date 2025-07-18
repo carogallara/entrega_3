@@ -2,6 +2,20 @@
 @use "variables" as *;
 @use "categorias";
 @use "footer";
+
+
+@keyframes girarVertical {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -56,7 +70,7 @@
       .nav-link {
         color: black;
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         text-decoration: none;
         padding: 0.5rem 1rem;
         transition: color 0.3s ease;
@@ -66,20 +80,26 @@
         }
       }
     }
+
+         h1{
+        text-align: center;
+        text-decoration: underline;
+         }
+         .titulo{
+          font-size: 2.5rem;
+         }
   }
   
   
   main {
-     max-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
     color: black;
     font-weight: bold;
     text-align: left;
-  }
-
   
- .bienvenida {
+    .bienvenida {
       padding: 4rem 2rem;      
     
       &__contenido {
@@ -103,8 +123,10 @@
     
         p {
           font-size: 1.2rem;
-          color: black;
-        }  
+          color: #555;
+        }
+      }
+    
       &__imagen {
         flex: 1 1 40%;
         min-width: 280px;
@@ -115,9 +137,12 @@
           max-width: 400px;
           height: auto;
           border-radius: 10px;
+          animation: girarVertical 5s infinite;
         }
       }
     }
+    
+  
     .categorias {
       h2 {
         text-align: center;
@@ -166,7 +191,7 @@
         text-align: center;
         margin-top: 1.5rem;
         padding-top: 10px;
-        font-weight: bold;
+        font-size: 10PX;
         text-decoration: underline;
       }     
       .producto-des {
@@ -184,6 +209,11 @@
             width: 100%;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(3, 3, 3, 0.1);
+            transition: transform 0.3s ease;
+
+            &:hover {
+              transform: scale(1.05);
+            }
           }
         }
       }
@@ -342,4 +372,4 @@
         padding: 1rem;
       }
     }
-       }
+  }
